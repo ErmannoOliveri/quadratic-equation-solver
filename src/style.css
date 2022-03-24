@@ -1,0 +1,112 @@
+/* From cssbuttons.io by @NorthFishHasNa */
+button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #3d405b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+button:hover span {
+    padding-right: 15px;
+}
+
+button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* A CSS class that is used to style the input element. */
+input {
+    margin: 15px 0 0;
+    border: none;
+    border-radius: 0;
+    width: 10%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+/* This is a CSS media query. It is used to change the styling of the input element when the screen is
+less than 700px wide. */
+@media only screen and (max-width: 700px) {
+
+    input {
+        min-width: 50% !important;
+    }
+
+}
+
+
+.title {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* This is a CSS rule that is used to set the font-family of the body of the webpage. */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.input {
+    display: grid;
+    place-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.result-div {
+    display: grid;
+    place-items: center;
+    margin-top: 25px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    user-select:none;
+    -ms-user-select:none;
+    -ms-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    font-family: inherit;
+}
+
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+

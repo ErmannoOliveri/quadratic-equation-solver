@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="src/script.js">
+    </script>
+    <link rel="icon" type="image/x-icon" href="/src/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadratic Equation Solver</title>
+</head>
+
+<body>
+    <div class="title">
+        <p>Quadratic Equation Solver</p>
+    </div>
+
+    <div class="input">
+        <input type="number" name="termine-a" id="a" placeholder="x^2 term" onclick="updateEquationValue()">
+        <input type="number" name="termine-b" id="b" placeholder="x term" onclick="updateEquationValue()">
+        <input type="number" name="termine-c" id="c" placeholder="Known Term" onclick="updateEquationValue()">
+
+        <button onclick="calculate()">
+            <span>Calculate</span>
+        </button>
+    </div>
+
+
+
+    <div class="result-div">
+        <span id="equation"></span>
+
+        <span id="result"></span>
+
+        <span id="result-value"></span>
+    </div>
+
+
+
+    <div class="footer">
+        <p>Made By Ermanno Oliveri <a class="fa fa-github" href="https://github.com/ErmannoOliveri"
+                style="font-size:20px; color:black;">
+            </a><br><br>Graphics by<a href="https://icons8.com/"> <img src="src/icons8.ico"></a> </p>
+    </div>
+
+</body>
+
+</html>
